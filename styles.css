@@ -1,2 +1,36 @@
-
 /* Your CSS Code here. */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  text-align: center;
+  margin: 40px;
+}
+
+h1 {
+  color: #333;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 60%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+tfoot td {
+  font-weight: bold;
+  background-color: #e9ecef;
+}
