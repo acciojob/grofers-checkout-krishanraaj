@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grofers Checkout</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>Grocery List</h2>
+  <h1>Grofers Checkout</h1>
 
-  <table id="grocery-table" border="1">
+  <table id="grocery-table">
     <tr>
       <th>Item</th>
       <th>Price</th>
@@ -17,25 +19,24 @@
       <td class="price" contenteditable="true">50</td>
     </tr>
     <tr class="item">
-      <td>Milk</td>
-      <td class="price" contenteditable="true">30</td>
-    </tr>
-    <tr class="item">
-      <td>Bread</td>
-      <td class="price" contenteditable="true">40</td>
-    </tr>
-    <tr class="item">
-      <td>Rice</td>
+      <td>Bananas</td>
       <td class="price" contenteditable="true">60</td>
     </tr>
     <tr class="item">
-      <td>Eggs</td>
-      <td class="price" contenteditable="true">20</td>
+      <td>Carrots</td>
+      <td class="price" contenteditable="true">70</td>
+    </tr>
+    <tr class="item">
+      <td>Bread</td>
+      <td class="price" contenteditable="true">80</td>
+    </tr>
+    <tr class="item">
+      <td>Milk</td>
+      <td class="price" contenteditable="true">90</td>
     </tr>
   </table>
 
   <button id="calc-btn">Calculate Total</button>
-
   <h3 id="ans"></h3>
 
   <script src="script.js"></script>

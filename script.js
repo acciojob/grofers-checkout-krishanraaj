@@ -1,16 +1,15 @@
-document.getElementById('calc-btn').addEventListener('click', function () {
-  const prices = document.querySelectorAll('.price');
+document.getElementById("calc-btn").addEventListener("click", function () {
+  // Select all price cells
+  const prices = document.querySelectorAll(".price");
+
+  // Compute total dynamically
   let total = 0;
-
-  prices.forEach(price => {
-    // Extract only digits (to handle extra typing or spaces)
-    let text = price.textContent.replace(/[^0-9]/g, '');
-    let value = parseFloat(text);
-
-    if (!isNaN(value)) {
-      total += value;
-    }
+  prices.forEach(cell => {
+    let val = parseFloat(cell.textContent.trim());
+    if (!isNaN(val)) total += val;
   });
 
-  document.getElementById('ans').textContent = total;
+  // Display the total inside #ans
+  const ans = document.getElementById("ans");
+  ans.textContent = total;
 });
