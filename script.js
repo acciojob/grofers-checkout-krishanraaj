@@ -1,21 +1,13 @@
-// Select all price elements
-const prices = document.querySelectorAll('.prices');
+document.getElementById('calc-btn').addEventListener('click', function () {
+  const prices = document.querySelectorAll('.price');
+  let total = 0;
 
-// Calculate total
-let total = 0;
-prices.forEach(price => {
-  total += Number(price.textContent);
+  prices.forEach(price => {
+    const value = parseFloat(price.textContent);
+    if (!isNaN(value)) {
+      total += value;
+    }
+  });
+
+  document.getElementById('ans').textContent = total;
 });
-
-// Create a new row for total
-const table = document.getElementById('grocery-table');
-const newRow = document.createElement('tr');
-const totalCell = document.createElement('td');
-
-// Span across both columns and display total
-totalCell.setAttribute('colspan', '2');
-totalCell.textContent = `Total Price: ${total}`;
-
-// Append the total row to the table
-newRow.appendChild(totalCell);
-table.appendChild(newRow);
