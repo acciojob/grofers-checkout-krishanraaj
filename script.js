@@ -1,15 +1,14 @@
 document.getElementById("calc-btn").addEventListener("click", function () {
-  // Select all price cells
+  // Get all cells with class "price"
   const prices = document.querySelectorAll(".price");
-
-  // Compute total dynamically
   let total = 0;
+
+  // Read updated values from the table
   prices.forEach(cell => {
-    let val = parseFloat(cell.textContent.trim());
-    if (!isNaN(val)) total += val;
+    const value = parseFloat(cell.textContent.trim());
+    if (!isNaN(value)) total += value;
   });
 
-  // Display the total inside #ans
-  const ans = document.getElementById("ans");
-  ans.textContent = total;
+  // Display total inside #ans
+  document.getElementById("ans").textContent = total;
 });

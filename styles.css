@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 30px;
   text-align: center;
+  margin: 40px;
 }
 
 table {
@@ -11,19 +11,18 @@ table {
 }
 
 th, td {
-  border: 1px solid #aaa;
-  padding: 10px;
-  text-align: center;
+  border: 1px solid #999;
+  padding: 8px 12px;
 }
 
 button {
   margin-top: 20px;
   padding: 10px 20px;
-  cursor: pointer;
   background-color: orange;
   color: white;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 h3 {
