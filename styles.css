@@ -11,21 +11,25 @@ table {
 }
 
 th, td {
-  border: 1px solid #999;
+  border: 1px solid #ccc;
   padding: 8px 12px;
+}
+
+.price {
+  cursor: text;
 }
 
 button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: orange;
+  background: orange;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-h3 {
+#ans {
   margin-top: 20px;
   color: green;
 }
